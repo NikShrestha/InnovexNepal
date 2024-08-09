@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Innovex Nepal</title>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'innovexnepalwebsite/styles.css' %}">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <div class="logo">
+                <img src="{% static 'images/logo.png' %}" alt="Innovex Nepal Logo">
+            </div>
+            <nav>
+                <ul>
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">About</a></li>
+                    <li><a href="#">Service</a></li>
+                    <li><a href="#">Pricing</a></li>
+                    <li><a href="#">Our Work</a></li>
+                    <li><a href="#">Career</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+            <div class="actions">
+                <a href="tel:9899999999"><img src="{% static 'images/phone.svg' %}" alt="Phone Icon"></a>
+                <button class="quick-enquiry">Quick Enquiry</button>
+            </div>
+        </div>
+    </header>
+
+    <section class="hero">
+        <div class="container">
+            <h1>Transform Your Vision Into A Digital Reality With The Best IT Company In Nepal</h1>
+            <div class="buttons">
+                <button class="btn">Let's Get Started</button>
+                <button class="btn">Discover Our Work</button>
+            </div>
+            <div class="it">
+                <img src="{% static 'images/it.svg' %}" alt="Hero Image">
+            </div>
+        </div>
+    </section>
+
+    <section class="services">
+        <div class="container">
+            <h2>Exceptional Services For Your Business Growth</h2>
+            <p>Discover our wide range of digital solutions to enhance your online presence.</p>
+            <div class="service-cards">
+                <div class="service-card">
+                    <img src="{% static 'images/website-development.svg' %}" alt="Website Development Icon">
+                    <h3>Web Development</h3>
+                    <p>Highly functional & visually appealing websites.</p>
+                </div>
+                <div class="service-card">
+                    <img src="{% static 'images/graphic-designing.svg' %}" alt="Graphic Designing Icon">
+                    <h3>Graphic Designing</h3>
+                    <p>Creative designs to elevate your brand's visual identity.</p>
+                </div>
+                <div class="service-card">
+                    <img src="{% static 'images/video-editing.svg' %}" alt="Video Editing Icon">
+                    <h3>Video Editing</h3>
+                    <p>Professional editing to make your videos stand out.</p>
+                </div>
+                <div class="service-card">
+                    <img src="{% static 'images/ui-ux-designing.svg' %}" alt="UI/UX Designing Icon">
+                    <h3>UI/UX Designing</h3>
+                    <p>Designing intuitive and engaging user interfaces.</p>
+                </div>
+            </div>
+            <button class="btn see-all">See All</button>
+        </div>
+    </section>
+    
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2023 Softbenz Infosys. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <button class="chat-button">Let's Chat!</button>
+
+    <script src="{% static 'script.js' %}"></script>
+</body>
+</html>
