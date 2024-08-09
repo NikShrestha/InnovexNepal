@@ -1,6 +1,8 @@
 /* style.css */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
 body {
-    font-family: 'Arial', sans-serif;
+    font-family: 'Poppins', sans-serif;
     margin: 0;
     background-color: #222;
     color: #fff;
@@ -16,8 +18,7 @@ body {
 }
 
 header {
-    background-color: #111;
-    padding: 20px 0;
+    background-color: #000000;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -25,6 +26,10 @@ header {
 
 .logo img {
     width: 150px;
+}
+
+nav {
+    margin-left: auto; /* Pushes the nav to the right side */
 }
 
 nav ul {
@@ -41,6 +46,18 @@ nav li {
 nav a {
     color: #fff;
     text-decoration: none;
+    font-family: 'Poppins', sans-serif; /* Apply Poppins font to navbar links */
+    font-weight: 600; /* Optional: Adjust weight for boldness */
+    padding: 10px 20px; /* Add padding for better spacing */
+    border-radius: 5px; /* Optional: Rounded corners */
+    background-color: #333; /* Default background color */
+    transition: background-color 0.3s, color 0.3s, transform 0.3s; /* Smooth transitions */
+}
+
+nav a:hover {
+    color: #f39c12; /* Change text color on hover */
+    background-color: #555; /* Change background color on hover */
+    transform: scale(1.05); /* Slightly scale up on hover */
 }
 
 .actions {
@@ -61,6 +78,7 @@ nav a {
     border-radius: 5px;
     cursor: pointer;
 }
+
 
 .hero {
     background-color: #181818;
