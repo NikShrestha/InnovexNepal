@@ -4,6 +4,5 @@ from innovexnepalwebsite import views as innovex_views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('', innovex_views.index, name='index'),  # Root URL for the index view
-    path('innovexnepalwebsite/', include('innovexnepalwebsite.urls')),
+    path('', include('innovexnepalwebsite.urls')),  # Include URLs from the app
 ]
